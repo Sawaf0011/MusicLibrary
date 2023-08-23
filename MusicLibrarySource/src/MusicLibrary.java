@@ -88,7 +88,7 @@ public class MusicLibrary {
     public ArrayList<Song> findSongByTitle(String title){
         ArrayList<Song> songsTitle = new ArrayList<>();
         for(Song song1: allSongs) {
-            if (song1.getSongTitle().equals(title)) {
+            if (song1.getSongTitle().contains(title)) {
                 System.out.println("Song found");
                 songsTitle.add(song1);
             }
